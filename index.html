@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" placeholder="0" id="prevDisplay">
+                <input type="text" placeholder="0" id="curDisplay">
+            </div>
+
+            <Button class="button operator" onclick="clearInput()">AC</Button>
+            <Button class="button operator" onclick="deleteLastSymbol()">DE</Button>
+            <Button class="button operator" onclick="addSymbolToInput('.')">.</Button>
+            <Button class="button operator" onclick="addOperator('/')">/</Button>
+
+            <Button class="button" onclick="addSymbolToInput('7')">7</Button>
+            <Button class="button" onclick="addSymbolToInput('8')">8</Button>
+            <Button class="button" onclick="addSymbolToInput('9')">9</Button>
+            <Button class="button operator" onclick="addOperator('*')">*</Button>
+
+            <Button class="button" onclick="addSymbolToInput('4')">4</Button>
+            <Button class="button" onclick="addSymbolToInput('5')">5</Button>
+            <Button class="button" onclick="addSymbolToInput('6')">6</Button>
+            <Button class="button operator" onclick="addOperator('-')">-</Button>
+
+            <Button class="button" onclick="addSymbolToInput('1')">1</Button>
+            <Button class="button" onclick="addSymbolToInput('2')">2</Button>
+            <Button class="button" onclick="addSymbolToInput('3')">3</Button>
+            <Button class="button operator" onclick="addOperator('+')">+</Button>
+
+            <Button class="button" onclick="addSymbolToInput('0')">0</Button>
+            <Button class="button" onclick="addSymbolToInput('00')">00</Button>
+            <Button class="button operator equal" onclick="equalInput()">=</Button>
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
